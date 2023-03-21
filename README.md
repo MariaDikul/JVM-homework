@@ -1,7 +1,6 @@
 # Код
 
 public class JvmComprehension {
-
     public static void main(String[] args) {
         int i = 1;                      // 1
         Object o = new Object();        // 2
