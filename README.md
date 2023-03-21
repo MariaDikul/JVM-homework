@@ -1,3 +1,5 @@
+# Код
+
 public class JvmComprehension {
 
     public static void main(String[] args) {
@@ -14,7 +16,7 @@ public class JvmComprehension {
     }
 }
 
-#ClassLoaders
+# ClassLoaders
 
 Запрос на загрузку классов(JvmComprehension, Object, Integer) поступает в Application ClassLoader. 
 Если класс не был загружен ранее, то запрос делегируется Platform ClassLoader, а затем Bootstrap ClassLoader.
@@ -27,7 +29,7 @@ Application ClassLoader загружает класс JvmComprehension в Metasp
 После загруженные классы связываются. 
 Далее на стадии инциализации вызывается статический метод printAll.
 
-#Runtime Data Area
+# Runtime Data Area
 
 В Stack создается фрейм для метода main.
 (1) в Stack создается пременная i и приравнивается к 1. 
@@ -38,9 +40,9 @@ Application ClassLoader загружает класс JvmComprehension в Metasp
 (6) вызывается метод вывода на экран и для этого создается новый фрейм в Stack(в курче создается объект типа String).
 (7) вызывается метод вывода на экран и для этого создается новый фрейм в Stack.
 
-#Execution Engine
+# Execution Engine
 
-##Garbage Collection
+## Garbage Collection
 
 Во время работы кода периодически происходит сборка мусора из кучи.
 Недостижимые объекты удаляются (uselessVar).
